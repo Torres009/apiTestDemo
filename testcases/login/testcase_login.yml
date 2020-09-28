@@ -1,0 +1,13 @@
+- config:
+    name: '用户登录'
+
+- test:
+    name: '账号登录'
+    api: api/login/api_login.yml
+    variables:
+         username: 'sihang'
+         password: 'sihangjian123456'
+         v_code: ''
+
+    validate:
+      - eq: ["status_code", 200]

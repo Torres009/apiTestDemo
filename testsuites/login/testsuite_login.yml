@@ -1,0 +1,6 @@
+config:
+    name: firstTest
+
+testcases:
+    账号登录:
+        testcase: testcases/login/testcase_login.yml

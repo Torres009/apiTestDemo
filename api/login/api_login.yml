@@ -1,0 +1,16 @@
+name: "账号登录"
+variables:
+      uri: 'http://doc.nnzhp.cn/server/index.php?s=/api/user/login'
+request:
+    url: $uri
+    method: POST
+    headers:
+        content-type: 'application/x-www-form-urlencoded; charset=UTF-8'
+#          Referer: 'application/x-www-form-urlencoded; charset=UTF-8'
+    data:
+       username: $username
+       password: $password
+       v_code: $v_code
+#       username: "sihang"
+#       password: "sihangjian123456"
+#       v_code: ""
